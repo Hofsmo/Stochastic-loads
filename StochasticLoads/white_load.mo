@@ -1,3 +1,4 @@
+within StochasticLoads;
 model white_load
   extends OpenIPSL.Electrical.Loads.PSAT.BaseClasses.baseLoad;
   inner Modelica.Blocks.Noise.GlobalSeed globalSeed annotation(Placement(visible = true, transformation(origin = {88, 70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -5,5 +6,5 @@ model white_load
 equation
   P = Noise1.y;
   Q = Q_0 / S_b;
-  annotation(uses(Modelica(version = "3.2.2")));
+  annotation ();
 end white_load;
