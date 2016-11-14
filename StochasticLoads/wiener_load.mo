@@ -1,3 +1,4 @@
+within StochasticLoads;
 model wiener_load
   extends OpenIPSL.Electrical.Loads.PSAT.BaseClasses.baseLoad;
   inner Modelica.Blocks.Noise.GlobalSeed globalSeed annotation(Placement(visible = true, transformation(origin = {62, 68}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -7,5 +8,5 @@ initial equation
 equation
   der(P) = Noise1.y;
   Q = Q_0 / S_b;
-  annotation(uses(Modelica(version = "3.2.2")));
+  annotation ();
 end wiener_load;

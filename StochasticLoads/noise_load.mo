@@ -1,3 +1,4 @@
+within StochasticLoads;
 class noise_load
   import Modelica.Math.Random.Generators.*;
   extends OpenIPSL.Electrical.Loads.PSAT.BaseClasses.baseLoad;
