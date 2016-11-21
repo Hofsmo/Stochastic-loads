@@ -1,4 +1,4 @@
-within NoiseInjections
+within NoiseInjections;
 model WhiteNoiseInjection
   parameter Real mu = 0;
   parameter Real sigma = 0.01;
