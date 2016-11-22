@@ -1,5 +1,6 @@
 within NoiseInjections;
 model WienerProcessInjection
+
   // Parameters to be used by the nois generators
   parameter Real active_mu = 0 "Expectation value active power noise";
   parameter Real active_sigma = 0.01 "Standard deviation active power noise";
